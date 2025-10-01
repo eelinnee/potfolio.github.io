@@ -635,7 +635,7 @@
 
             .figures {
                 flex-direction: column;
-                gap: 20px;
+                gap: 30px;
                 margin-top: 10px;
             }
 
@@ -686,6 +686,7 @@
             .click-welcome {
                 width: 160px;
                 font-size: 14px;
+                margin-top: 10px;
             }
 
             .section-title {
@@ -736,12 +737,14 @@
             }
 
             .window-content {
-                padding: 20px;
+                padding: 25px 20px 20px;
                 width: 95%;
             }
 
             .window-title {
                 font-size: 24px;
+                padding-right: 40px;
+                margin-top: 10px;
             }
 
             .window-descr {
@@ -814,6 +817,18 @@
                 padding: 6px 12px;
                 font-size: 12px;
             }
+
+            .window-content {
+                padding: 25px 15px 15px;
+            }
+
+            .close-window {
+                top: 10px;
+                right: 15px;
+                font-size: 26px;
+                width: 35px;
+                height: 35px;
+            }
         }
 
         /* Для очень маленьких экранов */
@@ -838,6 +853,41 @@
                 width: 180px;
                 height: 240px;
             }
+
+            .sphere,
+            .cube-box {
+                width: 100px;
+                height: 100px;
+            }
+
+            .cube-face {
+                width: 100px;
+                height: 100px;
+            }
+
+            .front {
+                transform: translateZ(50px);
+            }
+
+            .back {
+                transform: translateZ(-50px) rotateY(180deg);
+            }
+
+            .right {
+                transform: translateX(50px) rotateY(90deg);
+            }
+
+            .left {
+                transform: translateX(-50px) rotateY(-90deg);
+            }
+
+            .top {
+                transform: translateY(-50px) rotateX(90deg);
+            }
+
+            .bottom {
+                transform: translateY(50px) rotateX(-90deg);
+            }
         }
 
         @media (max-height: 500px) and (orientation: landscape) {
@@ -856,6 +906,10 @@
             .section-title {
                 margin-top: 20px;
                 margin-bottom: 15px;
+            }
+
+            .figures {
+                gap: 20px;
             }
         }
     </style>
