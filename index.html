@@ -22,13 +22,13 @@
         body {
             font-family: 'Century Gothic', sans-serif;
             min-height: 100vh;
-            background: linear-gradient(#291d2e 20%, #385295, #2c3e50 80%);
             color: white;
         }
 
         /* Вступительная секция */
         .body {
             display: flex;
+            background: linear-gradient(#291d2e 0%, #0a1a42 50%, #291d2e 100%);
             flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -217,7 +217,7 @@
             width: 100%;
             padding: 20px;
             text-align: center;
-            background: rgba(0, 0, 0, 0.3);
+            background: linear-gradient(to right, #291d2e 20%, #11275f, #291d2e 80%);
             margin-top: auto;
             color: darkgrey;
         }
@@ -231,7 +231,7 @@
             align-items: center;
             padding: 40px 20px;
             text-align: center;
-            background: linear-gradient(#291d2e 20%, #385295, #2c3e50 80%);
+            background: linear-gradient(#291d2e 20%, #11275f, #291d2e 80%);
         }
 
         .section-title {
@@ -269,15 +269,15 @@
         .my-image {
             width: 320px;
             height: 420px;
-            border-radius: 10%;
+            border-radius: 8%;
             object-fit: cover;
-            border: 1px solid rgba(26, 20, 145, 0.2);
-            box-shadow: 0 8px 30px #8d44ad4d;
+            border: 0.5px solid rgba(26, 20, 145, 0.2);
+            box-shadow: 0 6px 30px #8d44ad4d;
             transition: all 0.4s ease;
         }
 
         .my-image:hover {
-            transform: scale(1.05);
+            transform: scale(1.03);
         }
 
         .skills-box {
@@ -310,7 +310,7 @@
             align-items: center;
             padding: 40px 20px;
             text-align: center;
-            background: linear-gradient(#291d2e, #385295 80%, #2c3e50);
+            background: linear-gradient(#291d2e 20%, #11275f, #291d2e 80%);
         }
 
         .works-grid {
@@ -348,7 +348,7 @@
             align-items: center;
             padding: 40px 20px;
             text-align: center;
-            background: linear-gradient(#291d2e 20%, #385295, #2c3e50 80%);
+            background: linear-gradient(#291d2e 20%, #11275f, #291d2e 80%);
         }
 
         .contact-info {
@@ -369,6 +369,8 @@
         }
 
         .contact-item:hover {
+            border: 0.5px solid rgba(26, 20, 145, 0.2);
+            box-shadow: 0 6px 30px #8d44ad4d;
             transform: scale(1.1);
         }
 
@@ -624,7 +626,7 @@
                 font-size: 14px;
             }
         }
-        
+
         /* Для мобильных устройств */
         @media (max-width: 768px) {
             .body {
@@ -951,32 +953,40 @@
         <h2 style="margin-top: 20px;" class="section-title">[ обо мне ]</h2>
 
         <div class="about-box">
-            <img class="my-image" src="me.png" alt="Элина Гараева">
+            <img class="my-image" src="meh.png" alt="Элина Гараева">
             <div class="text-content">
-                <div class="about-content">
-                    <p>Меня зовут Гараева Элина. Я занимаюсь разработкой веб-сайтов. Сюда входит трепетный подход,
-                        включающий в себя создание интуитивно понятного интерфейса с современным и интерактивным
-                        интерфейсом.
-                        Владение востребованными языками программирования позволяет делать процесс разработки
-                        не только эффективным, но и творчески насыщенным. Это положительно сказывается как на качестве
-                        конечного продукта, так и на скорости его реализации
-                        Кроме того, знания пользования Adobe Photoshop, Figma также укрепляют каркас веб-разработки, так
-                        как дают возможность расширять элементы, используемые при проектировании сайтов, через
-                        самостоятельный подход к их созданию.
+                <div class="about-content">Меня зовут Гараева Элина. Я специализируюсь на создании веб-интерфейсов,
+                    объединяя навыки дизайна и фронтенд-разработки.
+                    <br><br>
+                    Мой технический стек:
+                    <ul style="margin-left: 5%;">
+                        <li>Вёрстка: HTML5, CSS3, JavaScript</li>
+                        <li>Дизайн: Figma, Adobe Photoshop</li>
+                        <li>Методология: полный цикл от концепции до кода</li>
+                    </ul>
+                    <br>
+                    Ключевые преимущества:
+                    <ul style="margin-left: 5%;">
+                        <li>Глубокое понимание как дизайна, так и технической реализации</li>
+                        <li>Чёткий процесс работы с этапами согласования</li>
+                        <li>Гибкость и скорость реакции на правки</li>
+                        <li>Умение слышать заказчика и воплощать его идеи в реальность</li>
+                    </ul>
+                    <p>
                     </p>
                 </div>
             </div>
         </div>
 
-        <h3 style="margin-top: 10px; font-family: 'Century Gothic', sans-serif;">Ключевые навыки</h3>
         <div class="skills-box">
-            <div class="skill-item">Веб-дизайн</div>
-            <div class="skill-item">Python</div>
-            <div class="skill-item">HTML/CSS</div>
-            <div class="skill-item">Java</div>
-            <div class="skill-item">AdobePhotoshop</div>
+            <div class="skill-item">HTML5</div>
+            <div class="skill-item">CSS3</div>
+            <div class="skill-item">JavaScript</div>
             <div class="skill-item">Figma</div>
+            <div class="skill-item">AdobePhotoshop</div>
             <div class="skill-item">Знание ООП</div>
+            <div class="skill-item">Python</div>
+            <div class="skill-item">Java</div>
         </div>
     </div>
 
@@ -992,11 +1002,18 @@
         <div class="works-grid">
             <a href="#cinema-window" class="work-item">
                 <h3>Веб-сайт кинотеатра</h3>
-                <p>Сайт кинотеатра с современным дизайном</p>
+                <br>
+                <i>Проект сайта кинотеатра с современным дизайном</i>
             </a>
             <a href="#harrypotter-window" class="work-item">
                 <h3>Приложение-справочник</h3>
-                <p>Приложение на AndroidStudio со справками по вселенной Гарри Поттера</p>
+                <br>
+                <i>Приложение на AndroidStudio со справками по вселенной Гарри Поттера</i>
+            </a>
+            <a href="#workproject-window" class="work-item">
+                <h3>Оптимизация работы сайта на Moodle</h3>
+                <br>
+                <i>Адаптация сайта образовательной организации с созданием яркого визуала и удобной работы с ним</i>
             </a>
         </div>
     </div>
@@ -1007,8 +1024,8 @@
             <h2 class="window-title">Веб-сайт кинотеатра</h2>
 
             <div class="window-descr">
-                <p style="margin-bottom: 20px;">Современный веб-сайт для кинотеатра с интуитивно понятным интерфейсом и
-                    удобным функционалом.</p>
+                <p style="margin-bottom: 20px;">Цель: разработать веб-сайт кинотеатра с совеременным дизайном, который
+                    упрощает процесс выбора фильмов и бронирования билетов.</p>
             </div>
 
             <div class="window-feats">
@@ -1024,27 +1041,51 @@
                 <div class="screen-item">
                     <h4>[ главная страница ]</h4>
                     <img src="cinema_imgs/main_cinema.png" alt="Главная страница">
-                    <p class="screen-descr">Главный экран с акционными предложениями и премьерами недели</p>
+                    <p class="screen-descr">Была создана главная страница с удобной навигацией по сайту с сохранением
+                        общей цветовой гаммы,
+                        чтобы не перегружать визуал. На главном экране представлены акционные предложениям и премьеры
+                        недели, данные элементы
+                        были разработаны и воплощены в AdobePhotoshop.
+                    </p>
                 </div>
                 <div class="screen-item">
                     <h4>[ расписание сеансов ]</h4>
                     <img src="cinema_imgs/table_cinema.png" alt="Расписание сеансов">
-                    <p class="screen-descr">Календарь с доступными сеансами</p>
+                    <p class="screen-descr">При нажатии на ссылку расписания сеансов открывается окно с расписаниями на
+                        ноябрь-декабрь. Была разработана многоуровневая система навигации, где наиболее востребованные
+                        элементы размещены на боковой панели и
+                        в шапке для максимальной доступности. Продуманный интерфейс календаря, где цветовое кодирование
+                        активных дней
+                        позволяет
+                        пользователю мгновенно определить доступные для бронирования даты, сокращая время
+                        на принятие решения.
+                    </p>
                 </div>
                 <div class="screen-item">
                     <h4>[ сеансы на день ]</h4>
                     <img src="cinema_imgs/table_opened_cinema.png" alt="Сеансы на день">
-                    <p class="screen-descr">Окно с афишей на определенный день, выбранный пользователем в системе</p>
+                    <p class="screen-descr">Детальная страница сеансов с интерактивными элементами: кликабельные постеры
+                        фильмов
+                        открывают трейлеры для принятия осознанного решения, а система цветового кодирования
+                        времени сеансов обеспечивает визуальную обратную связь при наведении, улучшая навигацию.</p>
                 </div>
                 <div class="screen-item">
                     <h4>[ схема зала ]</h4>
                     <img src="cinema_imgs/table_seats_cinema.png" alt="Места в кинозале">
-                    <p class="screen-descr">Интерактивная схема одного из залов с возможностью выбора места</p>
+                    <p class="screen-descr">Адаптивная система выбора мест: в зависимости от спроса на фильм и времени
+                        сеанса
+                        пользователь попадает в оптимальный по размеру кинозал. Цветовая дифференциация мест
+                        позволяет быстро ориентироваться в доступных вариантах без визуальной перегрузки.
+                    </p>
                 </div>
                 <div class="screen-item">
                     <h4>[ оформление покупки билета ]</h4>
                     <img src="cinema_imgs/table_buy_ticket_cinema.png" alt="Покупка билета">
-                    <p class="screen-descr">Имитационная модель оформления покупки билета в кинотеатре</p>
+                    <p class="screen-descr">Процесс оформления билета с визуальными подсказками и валидацией данных —
+                        система
+                        автоматически проверяет корректность ввода и уведомляет о необходимости дополнения
+                        информации перед подтверждением покупки.
+                    </p>
                 </div>
                 <div style="display: flex; justify-content: center;">
                     <a style="width: 50%; color: white; text-decoration: none; border: 1px solid white; border-radius: 5px; padding: 5px;
@@ -1061,14 +1102,10 @@
             <h2 class="window-title">Приложение-справочник по Вселенной Гарри Поттера</h2>
 
             <div class="window-descr">
-                <p>Мобильное приложение на Android Studio по Вселенной Гарри Поттера.
-                    В приложении представлена всесторонняя информация о различных факультетах Хогвартса, таких как
-                    Гриффиндор, Слизерин, Хаффлпафф и Рейвенкло.
-                    Пользователи смогут узнать об отличительных свойствах учеников каждого факультета, его
-                    характеристиках и основных элементах, связанных с ними.
-                    Это поможет фанатам лучше понять, какие черты и ценности отличают студентов каждого факультета.
-                    Кроме того, Wizardly содержит обширные списки заклинаний, которые исследуют магические способности
-                    персонажей. </p>
+                <p>Цель: разработать мобильное приложение на Android Studio по Вселенной Гарри Поттера с представлением
+                    всесторонняя информация о различных факультетах Хогвартса, таких как
+                    Гриффиндор, Слизерин, Хаффлпафф и Рейвенкло, чтобы пользователи смогли узнать об отличительных
+                    свойствах учеников каждого факультета, его </p>
             </div>
 
             <div class="window-feats">
@@ -1085,33 +1122,54 @@
                 <div class="v-screen-item">
                     <h4>[ экран загрузки приложения ]</h4>
                     <img src="app_wizardly_imgs/loading_app.png" alt="Экран загрузки приложения">
-                    <p class="v-screen-descr">Экран загрузки приложения</p>
+                    <p class="v-screen-descr">Разработан экран загрузки (Splash Screen) в тематике Вселенной Гарри
+                        Поттера — анимированая волшебная
+                        палочка и примечание в виде заклинания из Гарри Поттера, "открывающего все двери".
+                    </p>
                 </div>
                 <div class="v-screen-item">
                     <h4>[ главный экран приложения ]</h4>
                     <img src="app_wizardly_imgs/main_page_app.png" alt="Главный экран приложения">
-                    <p class="v-screen-descr">Начальный экран с быстрым доступом ко всем разделам приложения</p>
+                    <p class="v-screen-descr">Начальный экран, содержащий набор карточек, через которые можно переходить
+                        на страницы факультетов для подробной информации
+                        о них, и две карточки, посвященные заклинаниям и экранизации. Также внизу находится панель
+                        навигации (BottomNavigationView). Был проведен тщательный анализ, чтобы подобрать наиболее
+                        подходящие
+                        вектор-изображения под стиль приложения.
+                    </p>
                 </div>
                 <div class="v-screen-item">
                     <h4>[ экранная форма факультетов ]</h4>
                     <img src="app_wizardly_imgs/faculty_card_app.png" alt="Экранная форма факультета">
-                    <p class="v-screen-descr">Одна из экранный форм приложения по факультетам</p>
+                    <p class="v-screen-descr">Одна из экранный форм приложения по факультетам. Для других страниц
+                        факультетов информация представлена в схожем стиле, только в соответствующей факультету цветовой
+                        тематике и информации.
+                    </p>
                 </div>
                 <div class="v-screen-item">
                     <h4>[ экранная форма заклинаний ]</h4>
                     <img src="app_wizardly_imgs/spells_list_app.png" alt="Экранная форма заклинаний">
-                    <p class="v-screen-descr">Подробная информация о каждом заклинании, извлеченная из API</p>
+                    <p class="v-screen-descr">Данная экранная форма представлена в виде списка заклинаний, извлеченных
+                        через соответствующий API.
+                        Она извлекает наименование заклинания и краткое описание к нему.
+                    </p>
                 </div>
                 <div class="v-screen-item">
                     <h4>[ экранная форма экранизаций ]</h4>
                     <img src="app_wizardly_imgs/movie_list_app.png" alt="Экранная форма экранизаций">
-                    <p class="v-screen-descr">Подробная информация о каждой экранизации, извлеченная из API</p>
+                    <p class="v-screen-descr">Данная экранная форма представлена также в виде списка, но содержит в себе
+                        — изображение и название фильма, дату выпуска,
+                        его длительность и крактое описание. Вся информация также извлекается через соответствующий API.
+                    </p>
                 </div>
                 <div class="v-screen-item">
                     <h4>[ экранная форма волшебников ]</h4>
                     <img src="app_wizardly_imgs/wizard_list_app.png" alt="Экранная форма волшебников">
                     <p class="v-screen-descr">Одна из экранных форм списка волшебников, информация о которых
-                        извлечена из API</p>
+                        извлечена из API. Здесь также извлекаются изображения и краткая информация о волшебнике,
+                        для отсутствующих фотографий прилагается фотография, созданная самостоятельно в AdobePhotoshop с
+                        припиской
+                        'ImageNotFound'</p>
                 </div>
             </div>
             <div style="display: flex; justify-content: center;">
@@ -1122,7 +1180,72 @@
             </div>
         </div>
     </div>
-        <!-- [ контакты ] -->
+
+    <div id="workproject-window" class="window">
+        <div class="window-content">
+            <a href="#works" class="close-window" style="color: #ff6b6b7a;">×</a>
+            <h2 class="window-title">Оптимизация работы сайта на Moodle</h2>
+
+            <div class="window-descr">
+                <p style="margin-bottom: 20px;">Цель: улучшить визуальное представление элементов курса и навигацию по
+                    сайту.</p>
+            </div>
+
+            <div class="window-feats">
+                <ul>
+                    <li>Удобный формат навигации по сайту</li>
+                    <li>Улучшенное представление элементов курса</li>
+                    <li>Простая, удобная и красивая система в карточке курса</li>
+                </ul>
+            </div>
+
+            <div class="box-screens">
+                <div class="screen-item">
+                    <h4>[ главная страница ]</h4>
+                    <img src="work_sdto_imgs/sdto_main.jpg" alt="Главная страница">
+                    <p class="screen-descr">Ранее на главной странице были представлены элементы курсов. Была выполнена
+                        цель — исправить визуальное представление на главной странице. Теперь здесь размещено крактое
+                        описание
+                        организации с ссылкой на все элементы предоставляемых ими услуг с возможностью перехода на
+                        данный список курсов.
+                        Интуитивная навигация с подсветкой элементов направляет к детальному каталог курсов, улучшая
+                        пользовательский опыт.
+                        Кроме того, было реализовано слайд-шоу, визуализирующее спектр услуг через тематические
+                        изображения, а также добавлена
+                        карта с указанием расположения данной организации.
+                    </p>
+                </div>
+                <div class="screen-item">
+                    <h4>[ элемент курса ]</h4>
+                    <img src="work_sdto_imgs/sdto_course.jpeg" alt="Страница курса">
+                    <p class="screen-descr">Проведена комплексная оптимизация карточек курсов: расширено описание с
+                        добавлением
+                        целей и направленности обучения, внедрена система кликабельных элементов для каждого
+                        раздела с краткими аннотациями содержания, а адаптивные изображения улучшили
+                        визуальное восприятие и навигацию по учебным материалам.
+                    </p>
+                </div>
+                <div class="screen-item">
+                    <h4>[ элемент раздела курса ]</h4>
+                    <img src="work_sdto_imgs/sdto_element.jpeg" alt="Элемент раздела курса">
+                    <p class="screen-descr">Улучшенная навигация по элементу раздела данного курса. Включает в себя
+                        кликабельные
+                        элементы для перехода на лекцию с её кратким описанием.
+                    </p>
+                </div>
+                <div class="screen-item">
+                    <h4>[ итоговое тестирование ]</h4>
+                    <img src="work_sdto_imgs/sdto_test.jpeg" alt="Итоговое тестирование">
+                    <p class="screen-descr">Улучшен интерфейс тестирования: добавлена информация о количестве вопросов и
+                        баллов,
+                        тематическое изображение и мотивационное сообщение для лучшего пользовательского
+                        опыта и снижения тревожности перед тестом.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- [ контакты ] -->
     <div class="contacts-section" id="contacts">
         <div class="skills-box">
             <a href="#about" class="menu-item">[ обо мне ]</a>
@@ -1148,7 +1271,9 @@
                     href="https://github.com/eelinnee">github.com/eelinnee</a>
             </div>
             <div class="contact-item">
-                <a style="color: azure;" href="https://drive.google.com/file/d/1XJmlPw_GzdqZ0ihllJ-2tTMvDu9xXX2Z/view?usp=share_link">Ознакомиться с резюме</a>
+                <a style="color: azure;"
+                    href="https://drive.google.com/file/d/1XJmlPw_GzdqZ0ihllJ-2tTMvDu9xXX2Z/view?usp=sharing">Ознакомиться
+                    с резюме</a>
             </div>
         </div>
     </div>
